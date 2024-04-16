@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" style="scrollbar-width: thin; scrollbar-color: black white;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Weight Converter</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+    defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body class="bg-dark text-white">
+
+  <!-- container -->
+  <div class="container my-5 d-flex flex-column gap-3" style="max-width:500px;">
+
+    <!-- heading -->
+    <div class="display-3 text-center">Weight Converter</div>
+
+    <!-- Input and togle menue -->
+    <div class="input d-flex flex-column gap-2">
+
+      <!-- input -->
+
+      <div class="form-floating w-100">
+        
+        <input 
+        type="text" 
+        id="input-data" 
+        placeholder="Enter Weight In Killograms (kg)" style="flex-grow:1;"
+        class="form-control"/>
+
+
+        <label for="input-data" class="form-label text-dark" id="form-input-label">Enter Weight in killograms (kg)</label>
+      </div>
+      
+      <!-- dropdown -->
+      <div class="dropdown align-self-end">
+        <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+          data-bs-toggle="dropdown" arial-expand="false">
+          Change Unit
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a href="#" class="dropdown-item text-danger">Milligrams (mg)</a></li>
+          <li><a href="#" class="dropdown-item text-danger">Grams (g)</a></li>
+          <li><a href="#" class="dropdown-item text-danger">Killograms (kg)</a></li>
+          <li><a href="#" class="dropdown-item text-danger">Tonnes (t)</a></li>
+          <li><a href="#" class="dropdown-item text-danger">Ounces (oz)</a></li>
+          <li><a href="#" class="dropdown-item text-danger">Pounds (lb)</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="conversion d-flex flex-column gap-2">
+
+      <div class="bg-primary p-3 rounded" id="mgdiv">
+        <h3>Milligrams:</h3>
+        <span id="mg"></span>
+      </div>
+
+      <div class="bg-danger p-3 rounded" id="gdiv">
+        <h3>Grams:</h3>
+        <span id="g"></span>
+      </div>
+
+      <div class="bg-warning p-3 rounded" id="kgdiv">
+        <h3>Killograms:</h3>
+        <span id="kg"></span>
+      </div>
+
+      <div class="bg-success p-3 rounded" id="tdiv">
+        <h3>Tones:</h3>
+        <span id="t"></span>
+      </div>
+
+      <div class="bg-white text-dark p-3 rounded" id="ozdiv">
+        <h3>Ounces:</h3>
+        <span id="oz"></span>
+      </div>
+
+      <div class="bg-info p-3 rounded" id="lbdiv">
+        <h3>Pounds:</h3>
+        <span id="lb"></span>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</body>
+
+</html>

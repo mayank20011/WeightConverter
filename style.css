@@ -1,0 +1,22 @@
+.alert.alert-danger.shaking-animation.remove
+{
+  animation-name:shaking-animation;
+  animation-duration:2s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes shaking-animation {
+  0%
+  {
+
+  }
+  30%
+  {
+    transform:rotate(-30deg);
+  }
+  60%{
+    transform:rotate(30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
